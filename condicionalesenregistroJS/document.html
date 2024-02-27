@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulando el DOM</title>
+</head>
+<body id="cuerpo">
+    <main>
+        <section>
+            <h2 id="h2" onclick="cambiartitulo(this), cambiarcolor_titulo()">manipulando el dom puedo:</h2>
+        <br>
+        <br>
+        <button onclick="cambiarfondoazul()">
+            azul
+        </button>
+        <br>
+        <button onclick="cambiarfondorojo() ">
+            rojo
+        </button>
+        <br>
+        <button onclick="cambiarfondoblanco()">
+            blanco
+        </button>
+        </section>
+    </main>
+</body>
+
+<script>
+    function cambiartitulo(titulo){
+        titulo.innerHTML = 'cambiar el texto del titulo'
+    }
+    function cambiarcolor_titulo(titulo){
+   document.getElementById("h2").style.color = "green"
+    }
+    function cambiarfondoazul(){
+        document.getElementById("cuerpo").style.backgroundColor = "blue"
+    }
+    function cambiarfondorojo(){
+        document.getElementById("cuerpo").style.backgroundColor = "red"
+    }
+    function cambiarfondoblanco(){
+        document.getElementById("cuerpo").style.backgroundColor = "white"
+    }
+</script>
+</html>
